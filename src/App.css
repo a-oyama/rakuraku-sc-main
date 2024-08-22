@@ -10,7 +10,7 @@ header {
   align-items: center;
   background-color: #1d1d1d;
   color: white;
-  position: fixed;/* 固定 */
+/*   position: fixed;/* 固定 */ 
   width: 100%;
   z-index: 10; /* haederが固定して動く */
 }

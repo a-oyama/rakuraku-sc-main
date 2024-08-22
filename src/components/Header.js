@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return  (
@@ -7,13 +8,14 @@ const Header = () => {
             <h3>ポートフォリオ</h3>
         </div>
 
+{/* App.jsで設定したRoutesに飛ばす */}
         <nav>
             <ul>
                 <li>
-                    <a href="#">ホーム</a>
+                <Link to="/">ホーム</Link>
                 </li>
                 <li>
-                    <a href="#">ブログ</a>
+                <Link to="/blog">ブログ</Link>
                 </li>
                 <li>
                     <a href="#">SNS</a>
