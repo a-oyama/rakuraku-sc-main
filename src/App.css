@@ -8,7 +8,33 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(116, 116, 116);
+  background-color: #1d1d1d;
+  color: white;
+  position: fixed;/* 固定 */
+  width: 100%;
+  z-index: 10; /* haederが固定して動く */
+}
 
+/* Header.jsのh3タブ */
+header .logo h3 {
+  font-size: 30px;
+}
 
-};
+/* navタブ */
+nav ul li {
+  list-style: none; /* 白点消す */
+  display: inline-block; /* 横並び */
+  margin-right: 30px; /* 間隔 */
+}
+
+/* nav aタブ */
+nav ul li a {
+  text-decoration: none; /* 下線消す */
+  color: white;
+  transition: all 0.2s;/* 変色にかける時間 */
+}
+
+/* nav aタブ_ポインタ当てると変色 */
+nav ul li a:hover {
+  color: #58ac58;
+}
