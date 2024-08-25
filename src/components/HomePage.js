@@ -74,33 +74,28 @@ const HomePage = () => {
     </div>
   </section>
 
-  <section id="skill">
+  <section id="func">
     <div class="text-center">
       <h1 class="title">スキル</h1>
       <div class="row text-center">
         <div class="col-md-4 services">
           <img src={reactImage} />
-          <h4>React</h4>
-          <p>Reactがつかえます</p>
+          <h4>連絡</h4>
         </div>
         <div class="col-md-4 services">
           <img src={jsImage} />
-          <h4>HTML/CSS</h4>
-          <p>HTML/CSSがつかえます</p>
+          <h4>資料置き場</h4>
         </div>
         <div class="col-md-4 services">
           <img src={firebaseImage} />
-          <h4>Firebase</h4>
-          <p>Firebaseがつかえます</p>
+          <h4>動画</h4>
+          <p>(実装予定)</p>
         </div>
       </div>
-      <button type="button" class="btn btn-primary">
-        スキル一覧
-      </button>
     </div>
   </section>
 
-{/* News */}
+{/* News(chat・fileの最新更新の各3件まで表示) */}
  <section id="news" class="wrapper">
     <h2 class="sec-title">News</h2>
     <dl>
