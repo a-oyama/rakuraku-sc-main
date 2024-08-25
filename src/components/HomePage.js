@@ -4,6 +4,7 @@ import chatImage from "../Images/rakurakudog.jpg";
 import fileImage from "../Images/file.jpg";
 import movieImage from "../Images/movie.jpg";
 
+
 const HomePage = () => {
   return <div className="container text-center">
   <h1>Calendar</h1>

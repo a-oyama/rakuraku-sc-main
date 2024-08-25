@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SNSImage from "../Images/twitter.png";
+
 
 const Header = () => {
   return  (
@@ -15,10 +17,15 @@ const Header = () => {
                 <Link to="/">ホーム</Link>
                 </li>
                 <li>
-                <Link to="/chat">書き込み</Link>
+                <Link to="/chat">連絡事項</Link>
                 </li>
                 <li>
-                    <a href="#">SNS</a>
+                   <a href="https://www.twitter.com" 
+                   target="_blank"
+                   rel="noopenner noreferrer">
+                   <img src={SNSImage}
+                   alt="Twitter"
+                   class="icon" /></a>
                 </li>
             </ul>
         </nav>

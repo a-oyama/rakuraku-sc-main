@@ -30,6 +30,12 @@ header .logo h3 {
   color: white;
 }
 
+/* Twitterアイコン_header.jsでclass指定 */
+header li img.icon {
+  width: 30px;
+  height: 30px;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
