@@ -1,8 +1,9 @@
 import './App.css';
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
-import BlogPage from "./components/BlogPage";
+import ChatPage from './components/ChatPage';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} /> {/* ホーム画面 */}
-        <Route path="/blog" element={<BlogPage />} /> {/* ブログページ */}
+        <Route path="/chat" element={<ChatPage />} /> {/* ブログページ */}
 
         
       </Routes>

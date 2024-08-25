@@ -5,7 +5,7 @@ const Header = () => {
   return  (
     <header>{/* headerをcssで設定する */}
         <div className="logo">
-            <h3>ポートフォリオ</h3>
+            <h3>らくらくスケジュール</h3>
         </div>
 
 {/* App.jsで設定したRoutesに飛ばす */}
@@ -15,7 +15,7 @@ const Header = () => {
                 <Link to="/">ホーム</Link>
                 </li>
                 <li>
-                <Link to="/blog">ブログ</Link>
+                <Link to="/chat">書き込み</Link>
                 </li>
                 <li>
                     <a href="#">SNS</a>

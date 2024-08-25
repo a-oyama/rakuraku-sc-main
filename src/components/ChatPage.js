@@ -1,12 +1,12 @@
 import React from 'react';
 
-const BlogPage = () => {
+const ChatPage = () => {
   return <div className="container">
-    <h1>ブログ
+    <h1>書き込み
 
       <p>Lorem</p>
     </h1>
-  </div>;
+  </div>
 };
 
-export default BlogPage;
+export default ChatPage;

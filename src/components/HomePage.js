@@ -1,16 +1,14 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import reactImage from "../Images/react.png";
-import jsImage from "../Images/js.png";
-import firebaseImage from "../Images/firebase.jpg";
-import profileImage from "../Images/sibainu.jpg";
+import chatImage from "../Images/rakurakudog.jpg";
+import fileImage from "../Images/file.jpg";
+import movieImage from "../Images/movie.jpg";
 
 const HomePage = () => {
   return <div className="container text-center">
-  <h1>Shin Code</h1>
+  <h1>Calendar</h1>
 
-  <img src={profileImage} className="profileImage" />
-
+{/* Calendar */}
   <p>
     カレンダー部
   </p>
@@ -25,69 +23,21 @@ const HomePage = () => {
     カレンダー部
   </p>
 
-  <section class="page-section" id="services">
-    <div className="service">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">PORTFOLIO</h2>
-        <h3 class="section-subheading text-muted mb-5">
-          私が作った作品一覧です
-        </h3>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">ECサイト</h4>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            maxime quam architecto quo inventore harum ex magni, dicta
-            impedit.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">レスポンシブサイト</h4>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            maxime quam architecto quo inventore harum ex magni, dicta
-            impedit.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">ウェブセキュリティ</h4>
-          <p class="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            maxime quam architecto quo inventore harum ex magni, dicta
-            impedit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+{/* Works */}
   <section id="func">
     <div class="text-center">
-      <h1 class="title">スキル</h1>
+      <h2 class="sec-title">Works</h2>
       <div class="row text-center">
         <div class="col-md-4 services">
-          <img src={reactImage} />
-          <h4>連絡</h4>
+          <img src={chatImage} />
+          <h4>連絡事項</h4>
         </div>
         <div class="col-md-4 services">
-          <img src={jsImage} />
+          <img src={fileImage} />
           <h4>資料置き場</h4>
         </div>
         <div class="col-md-4 services">
-          <img src={firebaseImage} />
+          <img src={movieImage} />
           <h4>動画</h4>
           <p>(実装予定)</p>
         </div>
