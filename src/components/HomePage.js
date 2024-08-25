@@ -12,8 +12,17 @@ const HomePage = () => {
   <img src={profileImage} className="profileImage" />
 
   <p>
-    ShinCodeです。普段は個人でWeb系の情報発信をYoutubeやTwitterにて行っています。主にHTML/CSS/Javascript/Reactメインに取り扱っています。趣味は個人でプログラミングの撮影を行うことです。
-    ShinCodeです。普段は個人でWeb系の情報発信をYoutubeやTwitterにて行っています。主にHTML/CSS/Javascript/Reactメインに取り扱っています。趣味は個人でプログラミングの撮影を行うことです。
+    カレンダー部
+  </p>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <p>
+    カレンダー部
   </p>
 
   <section class="page-section" id="services">
@@ -90,6 +99,40 @@ const HomePage = () => {
       </button>
     </div>
   </section>
+
+{/* News */}
+ <section id="news" class="wrapper">
+    <h2 class="sec-title">News</h2>
+    <dl>
+        <dt>2024/6/30</dt>
+        <dd>本ページの作成作業を開始</dd>
+        <dt>2024/7/1</dt>
+        <dd>作業続行</dd>
+        <dt>2024/7/2</dt>
+        <dd>勤務中からの体調不良により作業不可</dd>
+        <dt>2024/7/3</dt>
+        <dd>鬱気味から回復し本サイトが完成</dd>
+    </dl>
+  </section>
+
+
+{/* Mail */}
+  <section id="contact" class='wrapper'>
+    <h2 class="sec-title">Contact</h2>
+    <p>お問い合わせは以下のフォームから</p>
+    <form action="#" method="post">
+     <dl>
+        <dt><label for="name">お名前</label></dt>
+        <dd><input type="text" id="name" /></dd>
+        <dt><label for="email">メールアドレス</label></dt>
+        <dd><input type="email" id="email" /></dd>
+        <dt><label for="content">内容</label></dt>
+        <dd><textarea id="content" cols="30" row="10"> </textarea></dd>
+     </dl>
+     <div class="button"><input type="submit" value="送信"/></div>
+    </form>
+  </section>
+
 </div>
 };
 
