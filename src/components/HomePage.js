@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import chatImage from "../Images/rakurakudog.jpg";
 import fileImage from "../Images/file.jpg";
 import movieImage from "../Images/movie.jpg";
+
 
 
 const HomePage = () => {
@@ -25,26 +26,40 @@ const HomePage = () => {
   </p>
 
 {/* Works */}
+<nav>
+  <ul>
   <section id="func">
     <div class="text-center">
       <h2 class="sec-title">Works</h2>
       <div class="row text-center">
         <div class="col-md-4 services">
-          <img src={chatImage} />
+          <li>
+            <Link to="/chat">
+               <img src={chatImage} alt=""/> {/* alt=画像取得できない場合 */}
+            </Link>
+          </li>
           <h4>連絡事項</h4>
         </div>
+
         <div class="col-md-4 services">
-          <img src={fileImage} />
+        <li>
+        <Link to="/file">
+          <img src={fileImage} alt=""/>
+        </Link>
+          </li>
           <h4>資料置き場</h4>
         </div>
+        
         <div class="col-md-4 services">
-          <img src={movieImage} />
+          <img src={movieImage} alt=""/>
           <h4>動画</h4>
           <p>(実装予定)</p>
         </div>
       </div>
     </div>
   </section>
+  </ul>
+</nav>
 
 {/* News(chat・fileの最新更新の各3件まで表示) */}
  <section id="news" class="wrapper">
