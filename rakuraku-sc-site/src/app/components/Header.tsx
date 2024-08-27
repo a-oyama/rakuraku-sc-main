@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SNSImage from "./assets/Images/twitter.png";
+import SNSImage from "../Images/twitter.png";
 
 
 const Header = () => {
