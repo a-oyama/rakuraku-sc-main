@@ -1,8 +1,9 @@
-import Image from "next/image";
-
-export default function Home() {
+const Page = () => {
   return (
-    <div>Hello</div>
-
-  );
+    <div className="h-full">
+      <div>メインページ</div>
+    </div>
+  )
 }
+
+export default Page
