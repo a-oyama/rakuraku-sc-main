@@ -1,13 +1,32 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Navigation from "./components/navigation";
+import 'server-only'
+
+import "./globals.css"
+import Navigation from "./components/navigation"
+import SupabaseListener from "./components/supabase-listener"
+import SupabaseProvider from "./components/supabase-provider"
+import { createClient } from "../../utils/supabase-server"
+
+//　キャッシュしない
+export const revalidate = 0
+
 
 // レイアウト
 const RootLayout = async ({ children }: { children: React.ReactNode }) => {
+  const supabace = createClient()
+
+  // セッション情報取得
+  const {
+    data: { session},
+  } = await supabace.auth.getSession()
+
+
   return (
     <html>
       <body>
+        <SupabaseProvider>
+          <SupabaseListener serverAccessToken = {session?.access_token} />
         <div className="flex flex-col min-h-screen">
           <Navigation />
 
@@ -19,6 +38,7 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
             </div>
           </footer>
         </div>
+        </SupabaseProvider>
       </body>
     </html>
   )
